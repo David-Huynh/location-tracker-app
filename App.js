@@ -13,7 +13,7 @@ TaskManager.defineTask(LOCATION_TASK_NAME, ({ data: { eventType, region }, error
     console.log(error.message);
     return;
   }
-  const params = new URLSearchParams();
+  const params = new FormData();
   if (eventType === Location.GeofencingEventType.Enter) {
     // User entered region
     params.append('state', true);
