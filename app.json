@@ -21,6 +21,7 @@
       "bundleIdentifier": "com.dhuynh.homestatetracker",
       "buildNumber": "1.0.0",
       "infoPlist": {
+        "NSLocationAlwaysUsageDescription": "This app needs to know where you are to track your home location",
         "UIBackgroundModes": [
           "location",
           "fetch"
