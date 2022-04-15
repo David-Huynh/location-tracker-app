@@ -17,9 +17,11 @@ TaskManager.defineTask(LOCATION_TASK_NAME, ({ data: { eventType, region }, error
   if (eventType === Location.GeofencingEventType.Enter) {
     // User entered region
     params.append('state', true);
+    console.log('User entered region');
   } else if (eventType === Location.GeofencingEventType.Exit) {
     // User exited region
     params.append('state', false);
+    console.log('User exited region');
   }
   fetch(`${process.env.ENDPOINT}/`, {
     method:'POST',
